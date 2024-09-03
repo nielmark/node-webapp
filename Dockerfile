@@ -1,5 +1,5 @@
 FROM node:lts-slim
-
+COPY package.json package-lock.json* ./
 RUN npm install
 WORKDIR /home/node/app
 COPY . /home/node/app
